@@ -1,6 +1,7 @@
 """unpack_ipa_file.py
 
-Take one of the USPTO files and create a directory structure with individual XML files.
+Take one of the USPTO files and create a directory structure with individual XML
+files.
 
 Note that the PTO files themselves are concatenations of XML files.
 
@@ -34,6 +35,7 @@ import StringIO
 
 
 USPTO_DIR = '/DATA/resources/corpora/uspto/2018/'
+USPTO_DIR = '/home/j/corpuswork/corpora/uspto/2018/'
 
 
 def flush(string_buffer, source, file_name, directory):

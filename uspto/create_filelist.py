@@ -1,6 +1,7 @@
 """create_filelist.py
 
-Given a directory as created by unpack_ipa_file.py, create a file list from the directory.
+Given a directory as created by unpack_ipa_file.py, create a file list from the
+directory.
 
 Usage:
 
@@ -8,6 +9,9 @@ Usage:
 
 SOURCE is something like 'ipa180104' and refers to the weekly data releases from
 the USPTO. Output is written to a file named file-SOURCE.txt.
+
+The directory where the source is expected is hard-coded in the USPTO_DIR
+variable, which may need to be edited.
 
 The output file created is exactly like the files required by the tgist-features
 code. That is, it has tab-separated lines with year, long path and short path.
@@ -21,6 +25,8 @@ import glob
 
 
 USPTO_DIR = '/DATA/resources/corpora/uspto/2018/'
+USPTO_DIR = '/home/j/corpuswork/corpora/uspto/2018/'
+
 YEAR = 2018
 
 def process(source):
